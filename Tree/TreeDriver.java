@@ -15,9 +15,13 @@ public class TreeDriver {
     }
 
     public static void displayFamily(LinkedBinaryTree<String> lbt, Position<String> p) {
-        System.out.println("Parent: " + p.getElement());
+        System.out.println("Parent: " + p.getElement()); // Get Parent Element
         System.out.println("Children of " + p.getElement() + ": " + lbt.left(p).getElement() + " and " + lbt.right(p).getElement());
     }
+
+    /**
+     * Public method to obtain path to root from a specific node
+     */
 
     public static void pathToRoot(LinkedBinaryTree<String> lbt, Position<String> p) {
         System.out.print("Path to Root: " + p.getElement());
@@ -32,6 +36,10 @@ public class TreeDriver {
 
         }
     }
+
+    /**
+     * Public method to find height of the tree
+     */
 
     public static int findHeight(Position<String> node) {
         LinkedBinaryTree.Node<String> aNode = (LinkedBinaryTree.Node<String>) node;
