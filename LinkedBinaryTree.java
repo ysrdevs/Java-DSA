@@ -7,8 +7,7 @@ public class LinkedBinaryTree<E> implements BinaryTree, Position {
     protected Node<E> validate(Position<E> p) {
         if (!(p instanceof Node))
             return null;
-        Node<E> node = (Node<E>) p;
-        return node;
+        return (Node<E>) p;
     }
 
     @Override
@@ -104,7 +103,7 @@ public class LinkedBinaryTree<E> implements BinaryTree, Position {
     }
 
     protected Node<E> createNode(E e, Node<E> parent, Node<E> left, Node<E> right) {
-        return new Node<E>(e, parent, left, right);
+        return new Node<>(e, parent, left, right);
     }
 
     protected static class Node<E> implements Position<E> {

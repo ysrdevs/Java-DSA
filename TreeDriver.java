@@ -1,7 +1,7 @@
 public class TreeDriver {
     public static void main(String[] args) {
-        LinkedBinaryTree<String> tree = new LinkedBinaryTree<String>();
-        Position<String> root = tree.addRoot("Alphabet");
+        LinkedBinaryTree<String> tree = new LinkedBinaryTree<>();
+        Position root = tree.addRoot("Alphabet");
         Position<String> zero = tree.addLeft(root, "Google");
         Position<String> one = tree.addRight(root, "DeepMind");
         Position<String> two = tree.addRight(one, "Hark Health Solutions Limited");
